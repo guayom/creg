@@ -1,0 +1,24 @@
+servicios:
+ - title: "Creación y Desarrollo de contenido"
+   description: "Con base en nuestra experiencia y conocimiento de la industria del entrenamiento, desarrollamos la estrategia para convertir eventos de diversa índole, en plataformas de comunicación para nuestros clientes/anunciantes (potenciales patrocinadores)"
+   icon: file-image-o
+ - title: "Difusión y Promoción"
+   description: "Ideamos los mejores mecanismos para maximizar la difusión y promoción de los eventos, utilizando medios de comunicación masiva, medios alternativos y redes sociales. Contamos con alianzas de largo plazo con los más importantes medios de comunicación de nuestro país."
+   icon: bullhorn
+ - title: "Comercialización"
+   description: "Tenemos más de treinta años en la gestión de patrocinios, tiempo en los que hemos generado más de 30 millones de inversión en ocho países de la región. Tenemos la fórmula que permite a los anunciantes, identificar los grandes beneficios que ofrecen nuestras diversos modelos y estructura de patrocinios."
+   icon: usd
+
+proximos_eventos:
+ - title: Fox Challenge BMX
+   imagen: image16
+ - title: "Gandhi. Universo Asimétrico"
+   imagen: image17
+ - title: Expor Feria alemana
+   imagen: image18
+
+contacto:
+ nombre: Gustavo Pacheco
+ puesto: Gerente General
+ tel: +506 2239-9801 ext 204
+ cel: +506 8384-7206

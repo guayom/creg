@@ -1,0 +1,27 @@
+<section id="services" class="section rotate-section">
+
+  <div class="container">
+
+    <div class="row">
+
+      {% for servicio in site.data.info.servicios %}
+
+      <div class="col-sm-4 wow bounceInLeft">
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-{{ servicio.icon }}"></i>
+          </div>
+          <h4>{{ servicio.title }}</h4>
+          <div class="text">
+            <p>{{ servicio.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div><!-- .row -->
+
+  </div><!-- .container -->
+
+</section>

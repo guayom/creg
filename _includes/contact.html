@@ -1,0 +1,146 @@
+<section id="contact-header" class="section-header">
+
+  <div class="color-overlay">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 wow bounceInDown">
+          <h2>Contáctenos</h2>
+          <p>Si tiene alguna consulta o desea conocer más acerca de nuestros servicios</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Contact-data section start -->
+
+<section id="contact-data" class="callout-light">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-4 wow bounceInLeft">
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-envelope-o"></i>
+          </div>
+          <h4>Email</h4>
+          <div class="text">
+            <address>
+              <a href="mailto:{{ site.email }}">{{ site.email }}</a><br/>
+            </address>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 wow bounceInUp">
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-phone"></i>
+          </div>
+          <h4>Teléfonos</h4>
+          <div class="text">
+            <address>
+              <abbr title="Phone">Cel: </abbr>{{ site.data.info.contacto.cel }}<br/>
+              <abbr title="Phone">Tel: </abbr>{{ site.data.info.contacto.tel }}<br/>
+            </address>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 wow bounceInRight">
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <h4>Dirección</h4>
+          <div class="text">
+            <address>
+              121 Somewhere Ave, Suite 123<br/>
+              San Francisco, CA 12345
+            </address>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- .row -->
+
+  </div><!-- .container -->
+
+</section>
+
+<!-- Contact-data section end -->
+
+<section id="contact" class="section rotate-section">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 wow bounceInLeft">
+
+        <h4>Póngase en contacto con nosotros</h4>
+        <form id="contact-form" method="post" role="form">
+
+          <div class="ajax-hidden">
+
+            <div class="form-group">
+              <label class="sr-only" for="c_name">Nombre</label>
+              <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Nombre Completo">
+            </div>
+
+            <div class="form-group">
+              <label class="sr-only" for="c_email">Email</label>
+              <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Su mensaje"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-custom-1-inverse">
+              <i class="fa fa-bullhorn icon-before"></i> Enviar
+            </button>
+
+          </div>
+
+          <div class="ajax-response"></div><!-- Displays status when submitting form -->
+
+        </form>
+
+      </div><!-- .col -->
+
+      <div class="col-md-6 wow bounceInUp">
+
+        <h4>Más información</h4>
+        <p>Aquí se puede poner otra información de contacto</p>
+        <hr/>
+
+        <h4>Horario de atención</h4>
+        <ul class="list-unstyled">
+          <li>Mo - Fr: 8am to 6pm</li>
+          <li>Sa, Su: 10am to 2pm</li>
+        </ul>
+        <hr/>
+
+        <h4>Seguinos en</h4>
+        <ul class="icons-widget">
+          <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+
+      </div><!-- .col -->
+
+    </div><!-- .row -->
+
+  </div><!-- .container -->
+
+</section>
