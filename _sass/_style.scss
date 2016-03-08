@@ -20,7 +20,7 @@ img {
 }
 
 a {
-	color: #90C695;
+	color: $brand-primary;
 }
 
 a:hover {
@@ -221,9 +221,9 @@ a,
 
 .btn-custom-1, .btn-custom-2 {
 	background: transparent;
-	border: 2px solid #90C695;
+	border: 2px solid $brand-primary;
 	padding: 15px 25px;
-	color: #90C695;
+	color: $brand-primary;
 }
 
 .btn-custom-2 {
@@ -232,8 +232,8 @@ a,
 }
 
 .btn-custom-1:hover, .btn-custom-1:focus, .btn-custom-1:active, .btn-custom-1.active {
-	background: #90C695;
-	border: 2px solid #90C695;
+	background: $brand-primary;
+	border: 2px solid $brand-primary;
 	color: #FFF;
 }
 
@@ -244,8 +244,8 @@ a,
 }
 
 .btn-custom-1-inverse, .btn-custom-2-inverse {
-	background: #90C695;
-	border: 2px solid #90C695;
+	background: $brand-primary;
+	border: 2px solid $brand-primary;
 	padding: 15px 25px;
 	color: #FFF;
 }
@@ -257,8 +257,8 @@ a,
 
 .btn-custom-1-inverse:hover, .btn-custom-1-inverse:focus, .btn-custom-1-inverse:active, .btn-custom-1-inverse.active {
 	background: transparent;
-	border: 2px solid #90C695;
-	color: #90C695;
+	border: 2px solid $brand-primary;
+	color: $brand-primary;
 }
 
 .btn-custom-2-inverse:hover, .btn-custom-2-inverse:focus, .btn-custom-2-inverse:active, .btn-custom-2-inverse.active {
@@ -287,7 +287,7 @@ a,
 }
 
 .skill-bar .skill-rate-on {
-	background: #90C695;
+	background: $brand-primary;
 }
 
 .skill-rate-on, .skill-rate-off {
@@ -312,7 +312,7 @@ a,
 }
 
 .progress-bar {
-	background: #90C695;
+	background: $brand-primary;
 	box-shadow: none;
 	text-align: right;
 	padding-right: 10px;
@@ -343,7 +343,7 @@ a,
 .nav-pills > li.active > a,
 .nav-pills>li.active>a:hover,
 .nav-pills>li.active>a:focus {
-	background: #90C695;
+	background: $brand-primary;
 }
 
 /* ---------------------------------------------- /*
@@ -380,7 +380,7 @@ a,
 }
 
 .label-custom-1 {
-	background: #90C695;
+	background: $brand-primary;
 }
 
 .label-custom-2 {
@@ -425,7 +425,7 @@ a,
 }
 
 .icons-widget li a:hover {
-	background: #90C695;
+	background: $brand-primary;
 }
 
 .icons-widget-sm li a{
@@ -464,7 +464,7 @@ a,
 /* ---------------------------------------------- */
 
 .owl-theme .owl-controls .owl-buttons div {
-	background: #90C695;
+	background: $brand-primary;
 	font-size: 24px;
 	opacity: 1;
 	width: 44px;
@@ -474,7 +474,7 @@ a,
 }
 
 .owl-theme .owl-controls .owl-page span {
-	background: #90C695;
+	background: $brand-primary;
 	margin: 5px 4px;
 }
 
@@ -522,7 +522,7 @@ a,
 }
 
 .scroll-up a:hover {
-	color: #90C695;
+	color: $brand-primary;
 }
 
 /* ---------------------------------------------- /*
@@ -580,8 +580,11 @@ a,
 }
 
 .rotate-section {
-	background: #FFF;
+	background: $gris-bg;
 	z-index: 99;
+	h4{
+		color: #fff;
+	}
 }
 
 .rotate-section:before {
@@ -592,7 +595,7 @@ a,
 	width: 120%;
 	height: 100%;
 	position: absolute;
-	background-color: #FFF;
+	background-color: $gris-bg;
 
 	-webkit-transform-origin: 0 0;
 	   -moz-transform-origin: 0 0;
@@ -620,7 +623,7 @@ a,
 	width: 120%;
 	height: 100%;
 	position: absolute;
-	background-color: #FFF;
+	background-color: $gris-bg;
 
 	-webkit-transform: rotate(2deg);
 	   -moz-transform: rotate(2deg);
@@ -653,7 +656,7 @@ a,
 .navbar-custom .nav li.active {
 	background: none;
 	outline: 0;
-	color: #90C695;
+	color: $brand-primary;
 }
 
 .navbar-custom .navbar-brand {
@@ -683,7 +686,7 @@ a,
 .navbar-color .nav li a:focus,
 .navbar-color .nav li.active,
 .navbar-color .navbar-nav > li.active a {
-	color: #90C695;
+	color: $brand-primary;
 }
 
 .navbar-color .navbar-nav > li > a,
@@ -703,7 +706,7 @@ a,
 
 .navbar-color .navbar-toggle .icon-bar,
 .custom-collapse .navbar-toggle .icon-bar {
-	background: #90C695;
+	background: $brand-primary;
 }
 
 /* ---------------------------------------------- /*
@@ -713,7 +716,7 @@ a,
 #intro {
 	background: rgba(34, 34, 34, .2) !important;
 	z-index: auto !important;
-	padding: 260px 0 160px 0;
+	padding: 260px 0 100px 0;
 	text-align: center;
 }
 
@@ -729,6 +732,10 @@ a,
 
 .hello {
 	margin: 0 0 100px;
+}
+
+.intro-text{
+	min-height: 350px;
 }
 
 /* ---------------------------------------------- /*
@@ -752,7 +759,7 @@ a,
 
 .service .icon {
 	font-size: 32px;
-	color: #90C695;
+	color: $brand-primary;
 }
 
 .service h4 {
@@ -876,8 +883,11 @@ a,
 }
 
 #contact-data {
-	background: #ebeff0;
+	background: $gris-bg;
 	text-align: center;
+	h4{
+		color: #fff;
+	}
 }
 
 #map-section {
@@ -915,6 +925,7 @@ a,
 	margin: 0 auto;
 	display: block;
 	z-index: 10;
+	margin-top: 250px;
 }
 
 .mouse-icon .wheel {
