@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Copa del Café
 imagen: image3
 logros:

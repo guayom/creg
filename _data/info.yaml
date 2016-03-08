@@ -10,11 +10,7 @@ servicios:
    icon: usd
 
 proximos_eventos:
- - title: Fox Challenge BMX
-   imagen: image16
- - title: "Gandhi. Universo Asimétrico"
-   imagen: image17
- - title: Expor Feria alemana
+ - title: Expo Feria alemana
    imagen: image18
 
 contacto:

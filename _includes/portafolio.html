@@ -27,8 +27,8 @@
 
       {% for evento in site.eventos %}
 
-      <div class="col-md-6 col-sm-6 wow bounceInLeft">
-        <a href="/images/eventos/{{ evento.imagen }}.jpg" class="pop-up" title="{{ evento.title }}">
+      <div class="col-md-4 col-sm-6 wow bounceInLeft">
+        <a href="{{ evento.url }}" title="{{ evento.title }}">
           <div class="portfolio-item">
             <div class="portfolio-item-preview">
               <img src="/images/eventos/{{ evento.imagen }}.jpg" alt="{{ evento.title }}">

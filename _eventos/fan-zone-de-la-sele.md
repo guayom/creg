@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Fan Zone de La Sele
 order: 4
 imagen: image14

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Campeonato Nacional de Motocross
 imagen: image10
 logros:

@@ -1,6 +1,7 @@
 ---
+layout: page
 title: Campeonato latinoamericano de Motocross 2016
-imagen: image8
+imagen: image11
 other:
  - En el 2014 Costa Rica organizó el evento y fue un doble éxito: 
  - con una asistencia de más de 5000 personas.
