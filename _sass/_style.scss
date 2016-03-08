@@ -1066,6 +1066,9 @@ article.post{
 
 .thumbnail {
     padding: 0;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
 }
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
@@ -1075,5 +1078,15 @@ article.post{
 	.thumbnail{
 		height: 100px;
 		overflow: hidden;
+	}
+}
+
+.spacer{
+	height: 100px;
+}
+
+.main-content{
+	h2{
+		color: #fff;
 	}
 }

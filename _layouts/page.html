@@ -2,62 +2,91 @@
 layout: default
 ---
 
-<article class="post">
-  <div class="container">
-	  <div class="post-content">
-	  	<div class="col-xs-6" id="slider-thumbs">
-	  			<header class="post-header"> 
-				    <h1 class="post-title">{{ page.title }}</h1>
-				    <hr/>
-				  </header>
-		  		{{ content }}
-      </div>
-      <div class="col-xs-6">
-      	<!-- Carousel items -->
-        <div class="carousel-inner">
-        	{% for imagen in page.photos %}
-          	{% if forloop.first == true %}
-			        <div class="active item" data-slide-number="{{ forloop.index }}">
-				    {% else %}
-			        <div class="item" data-slide-number="{{ forloop.index }}">
-				    {% endif %}
-              <img src="/photos/{{ page.gallery }}/{{ imagen }}">
-            </div>
-          {% endfor %}    
-          </div>
-          <!-- Carousel nav -->
-          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
+<section id="portfolio-header" class="section-header">
+
+  <div class="color-overlay">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 wow bounceInDown">
+        	<div class="spacer"></div>
+          <h1 class="post-title">{{ page.title }}</h1>
         </div>
+
       </div>
-	  </div>
 
-	  <div class="container">
-		  <div class="col-xs-12">
-	  		<div class="carousel slide" id="myCarousel">
-	  			<!-- Bottom switcher of slider -->
-	          <ul class="hide-bullets" id="grid">
-	          	<div id="imagenes-grid" class="row">
-		          	{% for imagen in page.photos %}
-		              <li class="col-sm-3 imagen-grid">
-		                  <a class="thumbnail" id="carousel-selector-{{ forloop.index }}">
-		                     <img src="/photos/{{ page.gallery }}/thumbs/{{ imagen }}">
-		                  </a>
-		              </li>
-		            {% endfor %}
-		          </div>
-	          </ul>
-	      </div>
-	  	</div>
-	  </div>
-
-	  
+    </div>
 
   </div>
 
-</article>
+</section>
+
+<section id="portfolio" class="section rotate-section">
+
+  <div class="container">
+
+  	<div class="main-content">
+  		{{ content }}
+  	</div>
+
+  	{% if page.logros != null and page.logros != "" %}
+  		<h3>Logros:</h3>
+  		<ul>
+  			{% for logro in page.logros %}
+  				<li>{{ logro }}</li>
+  			{% endfor %}
+  		</ul>
+  	{% endif %}
+
+  	<div class="spacer"></div>
+
+    <div class="row grid">
+
+    	<div class="grid-sizer col-md-4 col-sm-6 wow bounceInLeft grid-item"></div>
+
+      {% for imagen in page.photos %}
+
+      <div class="col-md-4 col-sm-6 wow bounceInLeft grid-item">
+        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-image="/photos/{{ page.gallery }}/{{ imagen }}" data-target="#image-gallery">
+          <div class="portfolio-item">
+            <div class="portfolio-item-preview">
+              <img src="/photos/{{ page.gallery }}/thumbs/{{ imagen }}" />
+            </div>
+          </div>
+        </a>
+      </div>
+
+      {% endfor %}
+
+    </div><!-- .row -->
+
+  </div><!-- .container -->
+
+</section>
+
 {% include contact.html %}
+<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+            </div>
+            <div class="modal-body">
+                <img id="image-gallery-image" class="img-responsive" src="">
+            </div>
+            <div class="modal-footer">
+
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary pull-left" id="show-previous-image">Anterior</button>
+                </div>
+
+                <div class="col-md-6">
+                    <button type="button" id="show-next-image" class="btn btn-default pull-right">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
