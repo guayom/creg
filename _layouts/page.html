@@ -1,26 +1,63 @@
 ---
 layout: default
 ---
+
 <article class="post">
   <div class="container">
 	  <div class="post-content">
-	  	<div class="col-xs-6">
-	  		<div class="page-img">
-					<img src="/images/eventos/{{ page.imagen }}.jpg" alt="{{ page.title }}"/>
-				</div>
-	  	</div>
-	  	<div class="col-xs-6">
-	  		<header class="post-header"> 
-			    <h1 class="post-title">{{ page.title }}</h1>
-			    <hr/>
-			  </header>
-	  		{{ content }}
-	  	</div>
-	    
+	  	<div class="col-xs-6" id="slider-thumbs">
+	  			<header class="post-header"> 
+				    <h1 class="post-title">{{ page.title }}</h1>
+				    <hr/>
+				  </header>
+		  		{{ content }}
+      </div>
+      <div class="col-xs-6">
+      	<!-- Carousel items -->
+        <div class="carousel-inner">
+        	{% for imagen in page.photos %}
+          	{% if forloop.first == true %}
+			        <div class="active item" data-slide-number="{{ forloop.index }}">
+				    {% else %}
+			        <div class="item" data-slide-number="{{ forloop.index }}">
+				    {% endif %}
+              <img src="/photos/{{ page.gallery }}/{{ imagen }}">
+            </div>
+          {% endfor %}    
+          </div>
+          <!-- Carousel nav -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
 	  </div>
+
+	  <div class="container">
+		  <div class="col-xs-12">
+	  		<div class="carousel slide" id="myCarousel">
+	  			<!-- Bottom switcher of slider -->
+	          <ul class="hide-bullets" id="grid">
+	          	<div id="imagenes-grid" class="row">
+		          	{% for imagen in page.photos %}
+		              <li class="col-sm-3 imagen-grid">
+		                  <a class="thumbnail" id="carousel-selector-{{ forloop.index }}">
+		                     <img src="/photos/{{ page.gallery }}/thumbs/{{ imagen }}">
+		                  </a>
+		              </li>
+		            {% endfor %}
+		          </div>
+	          </ul>
+	      </div>
+	  	</div>
+	  </div>
+
+	  
 
   </div>
 
 </article>
 {% include contact.html %}
-

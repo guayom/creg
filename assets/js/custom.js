@@ -78,6 +78,31 @@
 		});
 
 		/* ---------------------------------------------- /*
+		 * Carousel Galería
+		/* ---------------------------------------------- */
+
+		$('#myCarousel').carousel({
+            interval: 5000
+    });
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click(function () {
+		    var id_selector = $(this).attr("id");
+		    try {
+		        var id = /-(\d+)$/.exec(id_selector)[1];
+		        console.log(id_selector, id);
+		        jQuery('#myCarousel').carousel(parseInt(id));
+		    } catch (e) {
+		        console.log('Regex failed!', e);
+		    }
+		});
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid.bs.carousel', function (e) {
+             var id = $('.item.active').data('slide-number');
+            $('#carousel-text').html($('#slide-content-'+id).html());
+    });
+
+		/* ---------------------------------------------- /*
 		 * Knob Animation
 		/* ---------------------------------------------- */
 
@@ -233,40 +258,6 @@
 
 			return false;
 
-		});
-
-		/* ---------------------------------------------- /*
-		 * Google Map
-		/* ---------------------------------------------- */
-
-		map = new GMaps({
-			el: '#map',
-			lat: 27.998653,
-			lng: -80.638855,
-			zoom: 16,
-			scrollwheel: false,
-			zoomControl : false,
-			panControl : false,
-			streetViewControl : false,
-			mapTypeControl: false,
-			overviewMapControl: false,
-			styles: [{"featureType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}]
-		});
-
-		var image = new google.maps.MarkerImage('assets/images/map-icon.png',
-			new google.maps.Size(60, 60),
-			new google.maps.Point(0, 0),
-			new google.maps.Point(26, 30)
-		);
-
-		map.addMarker({
-			lat: 27.998653,
-			lng: -80.638855,
-			icon: image,
-			title: 'Elegant',
-			infoWindow: {
-				content: '<p><strong>Elegant</strong><br/> We are here</p>'
-			}
 		});
 
 	});
