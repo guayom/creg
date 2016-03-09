@@ -3,7 +3,7 @@ layout: page
 title: Campeonato latinoamericano de Motocross 2016
 gallery: motocross-latino
 imagen: image11
-other:
+logros:
  - En el 2014 Costa Rica organizó el evento y fue un doble éxito: 
  - con una asistencia de más de 5000 personas.
  - Y además en esa ocasión Roberto Castro se coronó Campeón Latinoamericano.

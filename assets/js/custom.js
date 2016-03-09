@@ -68,11 +68,16 @@
 
 	$(document).ready(function() {
 
-		$('.grid').masonry({
-		  // options
-		  columnWidth: '.grid-sizer',
-		  itemSelector: '.grid-item'
-		});
+		/* ---------------------------------------------- /*
+		 * Masonry
+		/* ---------------------------------------------- */
+		 var $container = $('.grid');
+    $container.imagesLoaded( function() {
+        $container.masonry({
+	        itemSelector : '.grid-item',
+	        columnwidth: '.grid-sizer'
+	    });
+    });
 
 		/* ---------------------------------------------- /*
 		 * Animated scrolling / Scroll Up
