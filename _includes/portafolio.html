@@ -24,31 +24,21 @@
   <div class="container">
 
     <div class="row">
+      {% assign eventos = site.eventos | sort:"order"  %}
+      {% for evento in eventos %}
 
-      {% for gallery in page.galleries %}
-      <div class="gallery-wrapper">
-          <a href="{{ gallery['gallery'] }}">
-              <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+        <div class="col-md-4 col-sm-6 wow bounceInLeft">
+          <a href="{{ evento.url }}" title="{{ evento.title }}">
+            <div class="portfolio-item">
+              <div class="portfolio-item-preview">
+                <img src="/images/eventos/{{ evento.imagen }}.jpg" alt="{{ evento.title }}">
+              </div>
+              <div class="portfolio-item-description">
+                <h3>{{ evento.title }}</h3>
+              </div>
+            </div>
           </a>
-          <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
-          {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
-      </div>
-      {% endfor %}
-
-      {% for evento in site.eventos %}
-
-      <div class="col-md-4 col-sm-6 wow bounceInLeft">
-        <a href="{{ evento.url }}" title="{{ evento.title }}">
-          <div class="portfolio-item">
-            <div class="portfolio-item-preview">
-              <img src="/images/eventos/{{ evento.imagen }}.jpg" alt="{{ evento.title }}">
-            </div>
-            <div class="portfolio-item-description">
-              <h3>{{ evento.title }}</h3>
-            </div>
-          </div>
-        </a>
-      </div>
+        </div>
 
       {% endfor %}
 

@@ -7,7 +7,7 @@ logros:
  - En el 2014 Costa Rica organizó el evento y fue un doble éxito: 
  - con una asistencia de más de 5000 personas.
  - Y además en esa ocasión Roberto Castro se coronó Campeón Latinoamericano.
-order: 3
+order: 7
 photos:
  - BKY_1663.JPG
  - BKY_1688.JPG

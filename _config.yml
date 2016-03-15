@@ -8,7 +8,7 @@
 # Site settings
 title: Costa Rica Entertainment Group
 email: gpacheco@cr-eg.com
-description: "Costa Rica Entertainment Group es una empresa dedicada a la creación, desarrollo, difusión, promoción y comercialización de contenido dirigido al entretenimiento."
+description: "Costa Rica Entertainment Group es una empresa dedicada a la creación, desarrollo, difusión, promoción y comercialización de contenido dirigido al entretenimiento y la creación de experiencias."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://creg.com" # the base hostname & protocol for your site
 
