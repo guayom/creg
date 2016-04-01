@@ -27,18 +27,30 @@ layout: default
 
   <div class="container">
 
-  	<div class="main-content">
-  		{{ content }}
-  	</div>
+    <div class="row">
+      <div{% if page.logros != null and page.logros != "" %} class="col-md-6"{% endif %}>
+        <div class="main-content">
+      		{{ content }}
+      	</div>
+      </div>
+      {% if page.logros != null and page.logros != "" %}
+      <div class="col-md-6">
+        <div class="logros-container">
+          <h3>LOGROS</h3>
+      		<ul class="logros">
+      			{% for logro in page.logros %}
+      				<li>{{ logro }}</li>
+      			{% endfor %}
+      		</ul>
+        </div>
+      </div>
+    	{% endif %}
 
-  	{% if page.logros != null and page.logros != "" %}
-  		<h3>Logros:</h3>
-  		<ul>
-  			{% for logro in page.logros %}
-  				<li>{{ logro }}</li>
-  			{% endfor %}
-  		</ul>
-  	{% endif %}
+    </div>
+
+
+
+
 
   	<div class="spacer"></div>
 

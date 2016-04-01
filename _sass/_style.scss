@@ -1093,3 +1093,25 @@ article.post{
 .full-screen{
 	height: 100%;
 }
+.logros-container{
+  background:rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  h3{
+    text-align: center;
+  }
+  ul{
+    margin:0;
+    list-style: none;
+    li{
+      &:before {
+        font-family: 'FontAwesome';
+        content: '\f058';
+        margin:0 13px 0 -30px;
+        color: $brand-primary;
+      }
+    }
+  }
+
+}
