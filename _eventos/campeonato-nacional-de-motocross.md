@@ -8,6 +8,7 @@ logros:
  - Incremento del 100% en la inversión publicitaria en medios de comunicación masiva
  - "Incremento del 500% en “publicity” para el evento, gracias a las negociaciones de transmisión televisiva del evento"
 proxima_edicion: "Campeonato 2016"
+order: 6
 photos:
  - 1.jpg
  - MOtoNac2.jpg
