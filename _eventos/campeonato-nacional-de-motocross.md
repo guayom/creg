@@ -19,6 +19,17 @@ photos:
 ---
 Desde 2011, CREG ha trabajado en conjunto con la Federación de Motociclismo Costarricense y el Motoclub de Costa Rica, logrando importantes avances en este Campeonato Deportivo de alto nivel competitivo.
 
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+  <source src="/videos/mx.mov" type='video/mov'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+</video>
+
+<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+
 ### Calendario de eventos
 
 <table class="table">

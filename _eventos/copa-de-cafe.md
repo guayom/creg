@@ -10,15 +10,15 @@ proxima_edicion: Enero 2016
 order: 1
 gallery: copa-cafe
 photos:
- - CC5Jan09-13-2-24.jpg
- - CC5Jan09-13-5-22.jpg
- - CC5Jan09-13-29.jpg
- - CC5Jan09-13-46.jpg
- - CC5Jan09-13-62.jpg
- - CC5Jan09-13-66.jpg
- - CC5Jan09-13-69.jpg
- - CC5Jan09-13-158.jpg
- - CC09BkSw1.jpg
+# - CC5Jan09-13-2-24.jpg
+# - CC5Jan09-13-5-22.jpg
+# - CC5Jan09-13-29.jpg
+# - CC5Jan09-13-46.jpg
+# - CC5Jan09-13-62.jpg
+# - CC5Jan09-13-66.jpg
+# - CC5Jan09-13-69.jpg
+# - CC5Jan09-13-158.jpg
+# - CC09BkSw1.jpg
  - CC09Flags.jpg
  - CC16-EditBatch2Wed-11.jpg
  - CC16-PicsMon-77.jpg
