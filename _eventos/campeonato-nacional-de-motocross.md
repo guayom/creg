@@ -19,16 +19,22 @@ photos:
 ---
 Desde 2011, CREG ha trabajado en conjunto con la Federación de Motociclismo Costarricense y el Motoclub de Costa Rica, logrando importantes avances en este Campeonato Deportivo de alto nivel competitivo.
 
-<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
-poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-  <source src="/videos/mx.mov" type='video/mov'>
-  <p class="vjs-no-js">
-    To view this video please enable JavaScript, and consider upgrading to a web browser that
-    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-  </p>
-</video>
+<style type="text/css">.easyhtml5video .eh5v_script{display:none}</style>
+<div class="easyhtml5video" style="position:relative;max-width:640px;"><video controls="controls"  poster="/videos/mx/MX_Con_Patrocinadores_Final.jpg" style="width:100%" title="mx">
+<source src="/videos/mx/MX_Con_Patrocinadores_Final.m4v" type="video/mp4" />
+<source src="/videos/mx/MX_Con_Patrocinadores_Final.webm" type="video/webm" />
+<source src="/videos/mx/MX_Con_Patrocinadores_Final.mp4" />
+<object type="application/x-shockwave-flash" data="/videos/mx/flashfox.swf" width="640" height="360" style="position:relative;">
+<param name="movie" value="/videos/mx/flashfox.swf" />
+<param name="allowFullScreen" value="true" />
+<param name="flashVars" value="autoplay=false&controls=true&fullScreenEnabled=true&posterOnEnd=true&loop=false&poster=/videos/mx/MX_Con_Patrocinadores_Final.jpg&src=MX_Con_Patrocinadores_Final.m4v" />
+<embed src="/videos/mx/flashfox.swf" width="640" height="360" style="position:relative;"  flashVars="autoplay=false&controls=true&fullScreenEnabled=true&posterOnEnd=true&loop=false&poster=/videos/mx/MX_Con_Patrocinadores_Final.jpg&src=MX_Con_Patrocinadores_Final.m4v"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+<img alt="mx" src="/videos/mx/MX_Con_Patrocinadores_Final.jpg" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+</object>
+</video><div class="eh5v_script"><a href="http://easyhtml5video.com">html5 video converter</a> by EasyHtml5Video.com v3.9.1</div></div>
+<script src="/videos/mx/html5ext.js" type="text/javascript"></script>
 
-<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+<div class="gap"></div>
 
 ### Calendario de eventos
 
