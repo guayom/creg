@@ -31,5 +31,7 @@ Se desarrollará en la Pista la Olla, ubicada en Sabanilla de Alajuela. 
 
 __El Motocross en la Máxima Expresión en toda Latinoamérica.__
 
-<a href="http://www.motoclubcr.com/FRAMES/abajo.php" class="btn btn-default"><i class="fa fa-globe"></i> Ir al sitio web del motoclub</a>
+<a href="http://www.motoclubcr.com/FRAMES/abajo.php" class="btn btn-default"><i class="fa fa-globe"></i> Visitá el sitio web del motoclub</a>
+
+
 <a href="https://www.facebook.com/cnmxcostarica/?fref=ts" class="btn btn-primary"><i class="fa fa-facebook"></i> Seguí al Motoclub en Facebook</a>
