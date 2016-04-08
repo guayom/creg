@@ -283,7 +283,7 @@
 		 * Contact form ajax
 		/* ---------------------------------------------- */
 
-		$("#contact-form").submit(function(e) {
+		$("#contact-formzz").submit(function(e) {
 
 			e.preventDefault();
 
